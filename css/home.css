@@ -1,0 +1,209 @@
+/* Global */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #f15a22;
+  --light-blue: #7bb5ff;
+}
+/* End Global */
+
+/* Start Header  Section  */
+
+.header {
+  background-image: url("../images/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* Start Navbar */
+.navbar-nav {
+  margin: 15px 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.my-toggler {
+  border-color: var(--light-blue);
+  background: var(--light-blue);
+}
+
+.my-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.nav-link {
+  color: #fff;
+  text-shadow: 1px 1px #777;
+  margin-left: 4px;
+  padding-right: 0.3rem;
+  font-size: 13px;
+  margin-right: 4px;
+  padding-left: 0.3rem;
+  font-weight: 700;
+}
+.active {
+  color: var(--light-blue);
+}
+
+.book-now {
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff;
+}
+.book-now:hover {
+  color: #fff;
+  padding: 5px 10px;
+  background: var(--orange);
+  text-shadow: 0px 0px transparent;
+  border: 1px solid var(--orange);
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  border-top: 0.3em solid;
+  width: 0;
+  height: 0;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  display: inline-block;
+  border-left: 0.3em solid transparent;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+}
+
+/* End Navbar  */
+/* Start jumbotron Data  Box */
+.data-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.data-container .data-box {
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.data-container .data-box .alex {
+  color: var(--orange);
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  display: block;
+}
+
+.data-container .data-box .oct,
+.data-container .data-box .year {
+  font-family: "Rubik Mono One", sans-serif;
+  color: #fff;
+  font-weight: 100;
+}
+.data-container .data-box .oct {
+  display: block;
+  font-size: 30px;
+}
+.data-container .data-box .year {
+  display: inline-block;
+  font-size: 52px;
+  line-height: 56px;
+  margin-left: 15px;
+}
+
+.data-container .social-icons {
+  text-align: center;
+}
+.data-container .social-icons ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.data-container .social-icons ul li {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  margin: 15px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.data-container .social-icons ul li a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 53px;
+  height: 53px;
+  padding: 16px 15px;
+}
+.data-container .social-icons ul li a i {
+  font-size: 20px;
+  color: #fff;
+}
+/* End Jumbtroon */
+/* End Heade */
+/* For small screen */
+
+@media screen and (max-width: 760px) {
+  .navbar-collapse.justify-content-stretch.collapse.show {
+    z-index: 99;
+  }
+  .nav-item .nav-link {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0px 0px transparent;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    padding: 15px 0px;
+  }
+  .nav-link.active {
+    color: #fff;
+  }
+  .event-cont {
+    min-height: 250px !important;
+  }
+  .data-container {
+    width: 290px !important;
+    margin-top: 5px !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .data-container .alex,
+  .data-container .hybird,
+  .data-container .oct,
+  .data-container .year {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  .social-icons ul {
+    text-align: center !important;
+  }
+  .social-icons ul li {
+    margin: 10px 5px !important;
+  }
+  .social-icons ul li a {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 10px 7px !important;
+  }
+}
